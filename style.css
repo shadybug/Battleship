@@ -1,0 +1,26 @@
+#game{
+    text-align: center !important;
+    width: 46rem;
+    height: 30rem;
+    margin: auto;
+    border-style: solid;
+   }
+#player{
+    width: 20rem;
+    height: 20rem;
+    margin-left: 2rem;
+    float: left;
+    border-style: solid;
+}
+#computer{
+    width: 20rem;
+    height: 20rem;
+    margin-right: 2rem;
+    float: right;
+    border-style: solid;
+}
+.textdiv{
+    width: 50%;
+    height: 2.5rem;
+    float: left;
+}
