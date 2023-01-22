@@ -1,0 +1,7 @@
+$(function(){
+    initialize();
+
+    function initialize(){
+        
+    }
+});
