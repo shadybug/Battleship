@@ -11,6 +11,11 @@
     margin-left: 2rem;
     float: left;
     border-style: solid;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 #computer{
     width: 20rem;
@@ -18,9 +23,20 @@
     margin-right: 2rem;
     float: right;
     border-style: solid;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 .textdiv{
     width: 50%;
     height: 2.5rem;
     float: left;
+}
+.gridsquare{
+    width: 9.9%;
+    height: 9.9%;
+    border: 1px solid black;
+    background-color: #62bbd1;
 }
