@@ -23,7 +23,10 @@ $(function(){
                     var r = Math.floor(Math.random()*(this.board.length-this.length))
                     for (var i = 0; i < this.length; i++){
                         this.squares.push([r+i, c]);
-                        // TODO
+                        if (this.board[r+i][c] == "S"){
+                            this.squares = [];
+                            break;
+                        }
                     }
                 }
                 else {
@@ -31,7 +34,10 @@ $(function(){
                     var r = Math.floor(Math.random()*this.board.length)
                     for (var i = 0; i < this.length; i++){
                         this.squares.push([r, c+i]);
-                        // TODO
+                        if (this.board[r][c+i] == "S"){
+                            this.squares = [];
+                            break;
+                        }
                     }
                 }
 
@@ -93,5 +99,15 @@ $(function(){
         compShips.push(new Ship("Destroyer", 2, compBoard));
 
         drawBoard(playerBoard, "p");
+
+        $("#computer > .gridsquare").click(function(){
+            // get the row and column of the square
+            // check if it's been hit before
+            // if not, check if there's a ship there
+                // if so, mark it as hit
+                // otherwise, mark it as a miss
+            // update the text
+            console.log("clicked gridsquare!")
+        })
     }
 });
